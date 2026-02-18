@@ -3,6 +3,7 @@ from tkinter import ttk
 
 # Import tab classes
 from tabs.time_tab import TimeTab
+from tabs.excel_convert import ExcelColumnTab
 
 
 class ToolboxApp(tk.Tk):
@@ -17,6 +18,7 @@ class ToolboxApp(tk.Tk):
 
         # Add tabs
         notebook.add(TimeTab(notebook), text="Time")
+        notebook.add(ExcelColumnTab(notebook), text="Excel Cols")
         # notebook.add(RandomTab(notebook), text="Random")
         # notebook.add(NotesTab(notebook), text="Notes")
 
